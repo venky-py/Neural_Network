@@ -1,0 +1,21 @@
+<!-- teachers.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+</head>
+<body>
+    <h1>Teachers</h1>
+    <ul>
+        {% for teacher in teachers %}
+            <li>
+                Name: {{ teacher.name }}<br>
+                Module: {{ teacher.module }}
+            </li>
+        {% endfor %}
+    </ul>
+    <button onclick="location.href='/'">Back to Calculator</button>
+</body>
+</html>
